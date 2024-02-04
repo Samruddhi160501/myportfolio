@@ -4,7 +4,7 @@ import styled, { useTheme } from "styled-components";
 import { darkTheme } from "../../utils/Theme";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
-
+import { Bio } from "../../data/constants";
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
   height: 80px;
@@ -185,21 +185,24 @@ function NavBar() {
           />
         </MobileIcon>
         <NavItems theme={darkTheme}>
-          <NavLink theme={darkTheme} href="#home">
-            Home
-          </NavLink>
           <NavLink theme={darkTheme} href="#about">
             About
           </NavLink>
-          <NavLink theme={darkTheme} href="#project">
+          <NavLink theme={darkTheme} href="#skills">
+            Skills
+          </NavLink>
+          <NavLink theme={darkTheme} href="#projects">
             Project
+          </NavLink>
+          <NavLink theme={darkTheme} href="#experience">
+            Experience
           </NavLink>
           <NavLink theme={darkTheme} href="#education">
             Education
           </NavLink>
         </NavItems>
         <ButtonContainer theme={darkTheme}>
-          <GitHubButton theme={darkTheme} target="_blank">
+          <GitHubButton theme={darkTheme} target="_blank" href={Bio.github}>
             Github Profile
           </GitHubButton>
         </ButtonContainer>
@@ -254,7 +257,7 @@ function NavBar() {
               color: "white",
               width: "max-content",
             }}
-            // href={Bio.github}
+            href={Bio.github}
             target="_blank"
           >
             Github Profile

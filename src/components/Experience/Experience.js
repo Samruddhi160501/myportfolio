@@ -1,24 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import EducationCard from "../cards/EducationCard";
-import { education } from "../../data/constants";
+import ExperienceCard from "../cards/ExperienceCard";
+import { experiences } from "../../data/constants";
 import { darkTheme } from "../../utils/Theme";
 
 const Container = styled.div`
-  background: ${({ theme }) => theme.bgLight};
-
+  background: ${({ theme }) => theme.bg};
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 0px 0px 60px 0px;
   @media (max-width: 960px) {
     padding: 0px;
   }
 `;
-
 const Wrapper = styled.div`
   position: relative;
   display: flex;
@@ -27,13 +24,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 40px 0px 0px 0px;
+  padding: 80px 0;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
 `;
-
 const Title = styled.div`
   font-size: 42px;
   text-align: center;
@@ -56,22 +52,33 @@ const Desc = styled.div`
     font-size: 16px;
   }
 `;
+const TimelineSection = styled.div`
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+`;
 
-function Education() {
+function Experience() {
   return (
-    <Container id="education" theme={darkTheme}>
+    <Container id="experience" theme={darkTheme}>
       <Wrapper theme={darkTheme}>
-        <Title theme={darkTheme}>Education</Title>
+        <Title theme={darkTheme}>Experience</Title>
         <Desc theme={darkTheme}>
-          My education has been a journey of self-discovery and growth. My
-          educational details are as follows.
+          My work experience as Associate Software Engineer and working on
+          different companies and projects.
         </Desc>
-        {education.map((education, index) => (
-          <EducationCard education={education} />
+
+        {experiences?.map((experience, index) => (
+          <ExperienceCard experience={experience} />
         ))}
       </Wrapper>
     </Container>
   );
 }
 
-export default Education;
+export default Experience;

@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from '../../images/HeroImage.jpg'
+import HeroImg from "../../images/HeroImage.jpg";
 import { darkTheme } from "../../utils/Theme";
+import HeroBgAnimation from "../HeroBgAnimation/HeroBgAnimation";
 const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
@@ -18,7 +19,7 @@ const HeroContainer = styled.div`
   }
   z-index: 1;
 
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  ${"" /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%); */}
 `;
 const HeroBg = styled.div`
   position: absolute;
@@ -199,9 +200,11 @@ const ResumeButton = styled.a`
 
 function Hero() {
   return (
-    <div id="#about">
+    <div id="about">
       <HeroContainer theme={darkTheme}>
-        <HeroBg theme={darkTheme}></HeroBg>
+        <HeroBg theme={darkTheme}>
+          <HeroBgAnimation />
+        </HeroBg>
         <HeroInnerContainer theme={darkTheme}>
           <HeroLeftContainer theme={darkTheme} id="Left">
             <Title theme={darkTheme}>
@@ -209,9 +212,8 @@ function Hero() {
             </Title>
             <TextLoop theme={darkTheme}>
               I am a
-              <Span>
-                <Typewriter 
-                
+              <Span theme={darkTheme}>
+                <Typewriter
                   options={{
                     strings: Bio.roles,
                     autoStart: true,
