@@ -137,7 +137,7 @@ export const experiences = [
     role: "Associate Software Engineer",
     company: "Afour Technologies",
     date: "Feb 2022 - present",
-    desc: "Enhanced user experiences on Neurobit PSG & Hybrid, Portals by resolving bugs & reduced load time by 40%. Built Neurobit Analytics portal using React Js with seamless interaction of REST APIs using AXIOS optimized with React Query. Refactored previous code to TypeScript, updated with new dependency and integrated Vite with Jest for Unit Testing.",
+    desc: "Proficiently designed and developed interactive and user-friendly interfaces using ReactJS and Flutter.Implemented data models, business logic,database integrations, api integration, optimizing performance and data management using Java , Node.js, .Net and PostgreSQL.Built web services using RESTful APIs to integrate various systems together.",
     skills: [
       "ReactJS",
       "Redux",
