@@ -175,7 +175,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://scontent.fnag5-1.fna.fbcdn.net/v/t39.30808-6/305759969_450927350391446_1124562960827549862_n.png?_nc_cat=106&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=gYUrdH3WpD4AX8oiZkK&_nc_ht=scontent.fnag5-1.fna&oh=00_AfBoR76QEnBX-olM6xkyskO4q6DoEGvdEzsihruXqrnaaQ&oe=65C562CD",
+    img: "https://images.shiksha.com/mediadata/images/1569909597phpG2tzJm.jpg",
     school: " Vishwakarma Institute of Information Technology, Pune",
     date: "Aug 2018 - July 2022",
     grade: "9.35 CGPA",
@@ -183,7 +183,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/C510BAQHu2d0wU5dQXw/company-logo_200_200/0/1630579872840/st_xaviers_high_school_nagpur_logo?e=1715212800&v=beta&t=ULsKbVwibqLVzlL_rENiOFyFrGYIG8W2Hf9RBll6BXM",
+    img: "https://xaviersgroup.co.in/wp-content/uploads/2023/04/cropped-sd.jpg",
     school: "St. Xaviers High School",
     date: "Apr 2017 - May 2018",
     grade: "83.2%",

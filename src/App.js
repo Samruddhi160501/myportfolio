@@ -10,7 +10,6 @@ import Education from "./components/Education/Education";
 import { BrowserRouter as Router } from "react-router-dom";
 import Experience from "./components/Experience/Experience";
 import Project from "./components/projects/Project";
-import ProjectDetails from "./components/projects/ProjectDetails";
 import { dark } from "@mui/material/styles/createPalette";
 import Contact from "./components/Contact/Contact";
 const Body = styled.div`
